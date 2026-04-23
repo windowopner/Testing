@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let height = window.innerHeight;
 
     // Initialize Three.js Renderer
-    const renderer = new THREE.WebGLRenderer({ 
-        canvas, 
-        alpha: true, 
+    const renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
         antialias: false,
         powerPreference: "high-performance"
     });
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderer.setPixelRatio(window.devicePixelRatio);
 
     // Simulation Setup (Ping-Pong FBO)
-    const simRes = 512; 
+    const simRes = 512;
     const options = {
         width: simRes,
         height: simRes,
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateUniforms = {
         tMap: { value: null },
         u_delta: { value: new THREE.Vector2(1.0 / simRes, 1.0 / simRes) },
-        u_damping: { value: 0.985 } 
+        u_damping: { value: 0.985 }
     };
     const updateMaterial = new THREE.ShaderMaterial({
         uniforms: updateUniforms,
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('pointermove', (e) => {
         mouse.x = e.clientX / width;
         mouse.y = 1.0 - (e.clientY / height);
-        
+
         if (firstMove) {
             prevMouse.copy(mouse);
             firstMove = false;
@@ -221,10 +221,10 @@ document.addEventListener("DOMContentLoaded", () => {
         dropUniforms.u_radius.value = radius;
         dropUniforms.u_strength.value = strength;
         dropUniforms.tMap.value = rt1.texture;
-        
+
         renderer.setRenderTarget(rt2);
         renderer.render(dropScene, camera);
-        
+
         // Swap FBOs
         let temp = rt1;
         rt1 = rt2;
@@ -238,8 +238,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Interpolate mouse for smooth continuous ripples
         if (isMouseMoving) {
             const dist = prevMouse.distanceTo(mouse);
-            if (dist > 0.002) { 
-                const steps = Math.min(Math.ceil(dist / 0.002), 20); 
+            if (dist > 0.002) {
+                const steps = Math.min(Math.ceil(dist / 0.002), 20);
                 for (let i = 0; i <= steps; i++) {
                     const t = i / steps;
                     const x = THREE.MathUtils.lerp(prevMouse.x, mouse.x, t);
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
         updateUniforms.tMap.value = rt1.texture;
         renderer.setRenderTarget(rt2);
         renderer.render(simScene, camera);
-        
+
         // Swap
         let temp = rt1;
         rt1 = rt2;
