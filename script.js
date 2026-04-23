@@ -1,44 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rawArchiveData = [
+  const archiveData = [
     {
       id: "other-electronics",
       theme: "cyan",
       code: "EL",
       label: "System / 01",
       title: "Other electronics",
-      summary: "Repair bench systems, captured media, and utility hardware branches.",
+      summary: "Coming soon...",
       rootUrl: "html/project1/index.html",
       projects: [
         {
           id: "oe-01",
-          title: "Repair bench",
-          tagline: "Diagnostics, teardown logs, and recovered hardware notes.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "html/project1/index.html",
           versions: [
             {
               id: "oe-01-v10",
               label: "V1.0",
-              state: "Bench start",
-              summary: "Base repair structure for logging fixes, parts, and opening notes.",
-              tags: ["Diagnostics", "Bench", "Logs"],
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-01-v12",
-              label: "V1.2",
-              state: "Capture pass",
-              summary: "Adds clearer image tracking and first-pass component references.",
-              tags: ["Capture", "Photos", "Repair"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon....",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-01-v20",
-              label: "V2.0",
-              state: "Archive sync",
-              summary: "A cleaner archive-ready structure for bigger repair sessions.",
-              tags: ["Archive", "Sync", "Inventory"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -46,34 +46,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "oe-02",
-          title: "Device library",
-          tagline: "Cataloging utility gear, references, and recurring parts packs.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "html/project1/index.html",
           versions: [
             {
               id: "oe-02-v08",
-              label: "V0.8",
-              state: "Prototype",
-              summary: "Initial device shelf for simple references and part groupings.",
-              tags: ["Library", "Parts", "Refs"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-02-v10",
-              label: "V1.0",
-              state: "Stable base",
-              summary: "First stable catalog format with better naming and grouping.",
-              tags: ["Catalog", "Stable", "Naming"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-02-v13",
-              label: "V1.3",
-              state: "Expanded",
-              summary: "Opens space for more devices, media, and quick lookup notes.",
-              tags: ["Expanded", "Lookup", "Media"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -81,34 +81,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "oe-03",
-          title: "Media capture lab",
-          tagline: "Photos, clips, and visual references around physical builds.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "html/project1/index.html",
           versions: [
             {
               id: "oe-03-v09",
-              label: "V0.9",
-              state: "Draft rig",
-              summary: "Draft visual workflow for documenting repairs and gear layout.",
-              tags: ["Media", "Draft", "Capture"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-03-v11",
-              label: "V1.1",
-              state: "Refined",
-              summary: "Sharper pass for image sets, clips, and archive naming.",
-              tags: ["Visual", "Naming", "Refined"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Kay", "Um"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "oe-03-v14",
-              label: "V1.4",
-              state: "Systemized",
-              summary: "Unified capture flow for future project drops and publish prep.",
-              tags: ["Systemized", "Publish", "Flow"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Its really hard to make ts even it supported by ai",
+              tags: ["Null", "Help", "Me"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -127,34 +127,34 @@ document.addEventListener("DOMContentLoaded", () => {
       projects: [
         {
           id: "mc-01",
-          title: "Programming project 1",
-          tagline: "Control core architecture for the first active board branch.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "electronics/project1.html",
           versions: [
             {
               id: "mc-01-v10",
-              label: "V1.0",
-              state: "Core boot",
-              summary: "The first clean boot cycle for the control core branch.",
-              tags: ["Boot", "Core", "Board"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Ughh", "im", "tired"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-01-v12",
-              label: "V1.2",
-              state: "Timing pass",
-              summary: "Adds more stable timing routines and cleaner interrupt flow.",
-              tags: ["Timing", "ISR", "Refine"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-01-v20",
-              label: "V2.0",
-              state: "Board sync",
-              summary: "Moves the branch toward better hardware parity and diagnostics.",
-              tags: ["Sync", "Diagnostics", "Control"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -162,34 +162,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "mc-02",
-          title: "Programming project 2",
-          tagline: "Sensor stack branch for capture, smoothing, and output routing.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "electronics/project1.html",
           versions: [
             {
               id: "mc-02-v10",
-              label: "V1.0",
-              state: "Sensor link",
-              summary: "Initial sensor communication layer and raw reading capture.",
-              tags: ["Sensors", "Capture", "Input"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Sabu_il", "hehe"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-02-v11",
-              label: "V1.1",
-              state: "Smoothing",
-              summary: "Adds simple filtering and cleaner readout stability.",
-              tags: ["Filter", "Readout", "Stability"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["what", "should I", "add Here"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-02-v15",
-              label: "V1.5",
-              state: "Expanded IO",
-              summary: "Extends the stack for more channels and mixed input flows.",
-              tags: ["I/O", "Expand", "Sensors"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["FAHH", "RAHH", "Idk"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -197,34 +197,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "mc-03",
-          title: "Programming project 3",
-          tagline: "Diagnostic board branch for test passes and debug tooling.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "electronics/project1.html",
           versions: [
             {
               id: "mc-03-v08",
-              label: "V0.8",
-              state: "Debug draft",
-              summary: "Prototype diagnostic surface for quick board-state reads.",
-              tags: ["Debug", "Draft", "Board"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-03-v13",
-              label: "V1.3",
-              state: "Signal trace",
-              summary: "Brings in better signal tracing and test-case separation.",
-              tags: ["Signals", "Trace", "Test"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "lluN", "Test"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "mc-03-v21",
-              label: "V2.1",
-              state: "Lab ready",
-              summary: "A stronger diagnostic branch for bench sessions and board reviews.",
-              tags: ["Lab", "Diagnostics", "Review"],
+              label: "V1.n",
+              state: "walao",
+              summary: "Coming soon...",
+              tags: ["aww", "rah", "260226"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -236,77 +236,77 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "programming-projects",
       theme: "lime",
       code: "PR",
-      label: "System / 03",
-      title: "Programming projects",
-      summary: "Code branches, release ladders, and growing version trees.",
+      label: "Coming soon...",
+      title: "Coming soon...",
+      summary: "Coming soon...",
       rootUrl: "programming/project1.html",
       projects: [
         {
           id: "pr-01",
-          title: "Programming project 1",
-          tagline: "Primary code branch with a longer release ladder.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "programming/project1.html",
           versions: [
             {
               id: "pr-01-v10",
-              label: "V1.0",
-              state: "Initial release",
-              summary: "The first stable snapshot of the main programming branch.",
-              tags: ["Initial", "Stable", "Core"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Rahhh"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v12",
-              label: "V1.2",
-              state: "Polish pass",
-              summary: "Refines structure, naming, and a few quality-of-life touches.",
-              tags: ["Polish", "Structure", "UX"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v13",
-              label: "V1.3",
-              state: "System tuning",
-              summary: "Improves core flow and smooths the behavior across the branch.",
-              tags: ["Tune", "Flow", "Branch"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "null", "NULL"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v14",
-              label: "V1.4",
-              state: "Archive pass",
-              summary: "Pushes the branch toward a cleaner archive-friendly release.",
-              tags: ["Archive", "Cleanup", "Release"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["im bored", "heh", "ss"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v15",
-              label: "V1.5",
-              state: "Expanded base",
-              summary: "Adds room for future files, routes, and internal systems.",
-              tags: ["Expand", "Base", "Growth"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Tired", "ahh", "Fuh🥀"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v20",
-              label: "V2.0",
-              state: "Major revision",
-              summary: "A larger cut with stronger structure and a more mature release line.",
-              tags: ["Major", "Revision", "Scale"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-01-v21",
-              label: "V2.1",
-              state: "Refined major",
-              summary: "Sharpens the big revision and prepares it for further branching.",
-              tags: ["Refined", "Major", "Ready"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -314,34 +314,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "pr-02",
-          title: "Programming project 2",
-          tagline: "Automation branch for tools, scripts, and support systems.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "programming/project1.html",
           versions: [
             {
               id: "pr-02-v10",
-              label: "V1.0",
-              state: "Tool base",
-              summary: "Establishes the first working automation baseline.",
-              tags: ["Tools", "Automation", "Base"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-02-v11",
-              label: "V1.1",
-              state: "Routine pass",
-              summary: "Adds cleaner script flow and more dependable routines.",
-              tags: ["Routine", "Scripts", "Flow"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Rah", "Scripts", "Boom!"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-02-v20",
-              label: "V2.0",
-              state: "System branch",
-              summary: "Turns the branch into a stronger system-level automation set.",
-              tags: ["System", "Scale", "Automation"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["fah", "Mastery", "creatine monohydrate"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -349,34 +349,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "pr-03",
-          title: "Programming project 3",
-          tagline: "Experimental demo branch with more visual output paths.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "programming/project1.html",
           versions: [
             {
               id: "pr-03-v08",
-              label: "V0.8",
-              state: "Prototype",
-              summary: "Draft demo cut for testing visual ideas and interactions.",
-              tags: ["Prototype", "Demo", "Visual"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "qwer", "zxcv"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-03-v10",
-              label: "V1.0",
-              state: "Launch cut",
-              summary: "First launchable branch with clearer visual structure.",
-              tags: ["Launch", "Visual", "Structure"],
+              label: "V1.n",
+              state: "LOL",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-03-v14",
-              label: "V1.4",
-              state: "Expanded scene",
-              summary: "Adds more depth, more surface area, and better staging.",
-              tags: ["Expanded", "Scene", "Stage"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -384,34 +384,34 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           id: "pr-04",
-          title: "Programming project 4",
-          tagline: "Release pack branch for exported builds and bundled assets.",
+          title: "Coming soon...",
+          tagline: "Coming soon...",
           enterUrl: "programming/project1.html",
           versions: [
             {
               id: "pr-04-v10",
-              label: "V1.0",
-              state: "Bundle start",
-              summary: "First release pack branch for packaged outputs and archives.",
-              tags: ["Bundle", "Release", "Pack"],
+              label: "V1.n",
+              state: "Iwannagetrich",
+              summary: "Coming soon...",
+              tags: ["aaa", "bbb", "ccc"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-04-v12",
-              label: "V1.2",
-              state: "Packaging pass",
-              summary: "Improves packaging flow, naming, and folder discipline.",
-              tags: ["Packaging", "Naming", "Flow"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Js, Css, Html",
+              tags: ["Null", "Null", "Null"],
               runUrl: "",
               downloadUrl: "",
             },
             {
               id: "pr-04-v21",
-              label: "V2.1",
-              state: "Distribution ready",
-              summary: "A release-focused branch aimed at sharing and final exports.",
-              tags: ["Distribution", "Final", "Export"],
+              label: "V1.n",
+              state: "Coming soon...",
+              summary: "Coming soon...",
+              tags: ["Triple T", "Lww", "www"],
               runUrl: "",
               downloadUrl: "",
             },
@@ -420,26 +420,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
   ];
-
-  const placeholderTags = ["In progress..", "Coming soon", "Coming soon"];
-  const archiveData = rawArchiveData.map((category) => ({
-    ...category,
-    summary: "Coming soon",
-    projects: category.projects.map((project) => ({
-      ...project,
-      title: "In progress..",
-      tagline: "Coming soon",
-      enterUrl: "",
-      versions: project.versions.map((version) => ({
-        ...version,
-        state: "Coming soon",
-        summary: "Coming soon",
-        tags: placeholderTags,
-        runUrl: "",
-        downloadUrl: "",
-      })),
-    })),
-  }));
 
   const loading = document.getElementById("loading");
   const search = document.getElementById("search");
@@ -596,12 +576,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
 
                 <div class="stage-actions">
-                  <button
-                    type="button"
-                    class="stage-action primary is-disabled"
-                    data-action="enter"
-                    aria-disabled="true"
-                  >
+                  <button type="button" class="stage-action primary" data-action="enter">
                     Enter branch
                   </button>
                   <button type="button" class="stage-action" data-action="run">
@@ -784,7 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (enterButton) {
-      enterButton.dataset.url = "";
+      enterButton.dataset.url = project.enterUrl || category.rootUrl || "";
       enterButton.dataset.label = project.title;
     }
 
@@ -824,24 +799,25 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const revealThreshold = 0.18;
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          entry.target.classList.toggle(
-            "is-visible",
-            entry.intersectionRatio >= revealThreshold
-          );
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
         });
       },
       {
-        threshold: [0, revealThreshold, 0.38, 0.62],
-        rootMargin: "0px 0px -6% 0px",
+        threshold: 0.16,
+        rootMargin: "0px 0px -8% 0px",
       }
     );
 
-    revealItems.forEach((item) => observer.observe(item));
+    revealItems.forEach((item) => {
+      observer.observe(item);
+    });
   };
 
   const filterArchive = () => {
@@ -933,7 +909,12 @@ document.addEventListener("DOMContentLoaded", () => {
           const label = button.dataset.label || "Selection";
 
           if (action === "enter") {
-            showToast("Coming soon");
+            if (!url) {
+              showToast(`${label} has no linked surface yet.`);
+              return;
+            }
+
+            openViewerWithUrl(url, label);
             return;
           }
 
