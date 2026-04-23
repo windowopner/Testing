@@ -1,0 +1,214 @@
+:root {
+  --bg: #070b10;
+  --panel: rgba(14, 19, 26, 0.9);
+  --panel-soft: rgba(17, 24, 32, 0.78);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(171, 220, 255, 0.2);
+  --text: #f3f7fb;
+  --muted: #97a7b8;
+  --accent: #b2e0ff;
+  --accent-soft: rgba(178, 224, 255, 0.12);
+  --shadow: 0 28px 90px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Avenir Next", "SF Pro Display", "IBM Plex Sans KR",
+    "Noto Sans KR", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(122, 184, 255, 0.22), transparent 30%),
+    linear-gradient(180deg, #091018 0%, #06090d 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.project-shell {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.project-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 18px;
+}
+
+.project-panel,
+.project-side {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.project-panel {
+  padding: 32px;
+}
+
+.project-side {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+}
+
+.project-tag,
+.mini-label {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+}
+
+h1 {
+  margin: 14px 0 0;
+  font-size: clamp(2rem, 4.2vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.project-copy {
+  max-width: 52ch;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.feature-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.feature-strip span,
+.list-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 13px 18px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #dff3ff 0%, #acd8f9 100%);
+  color: #071018;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+  box-shadow: 0 14px 28px rgba(124, 184, 255, 0.2);
+}
+
+button:hover,
+button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(124, 184, 255, 0.26);
+  outline: none;
+}
+
+button.secondary {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  box-shadow: none;
+}
+
+.status-bar {
+  margin-top: 26px;
+  padding: 16px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 18px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.mini-section {
+  display: grid;
+  gap: 12px;
+}
+
+.mini-section h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.mini-section p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .project-shell {
+    width: min(100% - 20px, 100%);
+    padding: 18px 0;
+  }
+
+  .project-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .project-panel,
+  .project-side {
+    border-radius: 24px;
+  }
+
+  .project-panel,
+  .project-side {
+    padding: 22px;
+  }
+}

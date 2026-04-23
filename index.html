@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live archive</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading" aria-hidden="true">
+      <div class="loading-panel">
+        <span class="loading-tag">LIVE ARCHIVE</span>
+        <strong>Building branch systems</strong>
+      </div>
+    </div>
+
+    <div id="action-toast" class="action-toast" aria-live="polite"></div>
+
+    <div class="shell">
+      <header class="hero reveal">
+        <div class="hero-top">
+          <p class="eyebrow">LIVE ARCHIVE / 2026</p>
+          <div class="social-links" aria-label="Social links">
+            <a
+              class="social-link instagram"
+              href="https://www.instagram.com/sabu_il?igsh=d3A1NzVremkwbW9m&utm_source=qr"
+              data-link-name="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              class="social-link spotify"
+              href="https://open.spotify.com/user/31tvuofue2k4fzq6yo7idqc6lpeu?si=306964d426724a2f"
+              data-link-name="Spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spotify
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <h1>Live archive</h1>
+          <p class="hero-text">
+            A branching index for projects, subprojects, and version trails.
+          </p>
+        </div>
+
+        <div class="hero-tools">
+          <label class="search-field" for="search">
+            <input
+              id="search"
+              type="search"
+              placeholder="Search projects, branches, versions"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+      </header>
+
+      <main id="hub" class="archive-stack" aria-label="Archive stack"></main>
+
+      <p id="empty-state" class="empty-state" hidden>
+        Nothing matched that search.
+      </p>
+    </div>
+
+    <div id="viewer" aria-hidden="true">
+      <div id="topbar">
+        <button id="back" type="button">Back</button>
+        <div class="viewer-meta">
+          <span class="viewer-kicker">PROJECT VIEW</span>
+          <span id="title">Project</span>
+        </div>
+      </div>
+      <iframe id="frame" title="Project viewer" loading="lazy"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
