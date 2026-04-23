@@ -958,12 +958,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stickyTop = 24;
     const positions = new Map();
+    let isRunning = false;
+    let scrollTimer;
 
     stages.forEach((stage) => {
       positions.set(stage, { current: 0 });
     });
 
     const tick = () => {
+      if (!isRunning) return;
+
       const isMobile = window.innerWidth <= 1100;
 
       stages.forEach((stage) => {
@@ -1001,7 +1005,19 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(tick);
     };
 
-    requestAnimationFrame(tick);
+    const startLoop = () => {
+      clearTimeout(scrollTimer);
+      if (!isRunning) {
+        isRunning = true;
+        requestAnimationFrame(tick);
+      }
+      scrollTimer = setTimeout(() => {
+        isRunning = false;
+      }, 150);
+    };
+
+    window.addEventListener("scroll", startLoop, { passive: true });
+    window.addEventListener("resize", startLoop, { passive: true });
   };
 
   renderArchive();
