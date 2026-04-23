@@ -952,10 +952,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const initSmoothSticky = () => {
+    const stages = document.querySelectorAll(".detail-stage");
+    if (!stages.length) return;
+
+    const stickyTop = 24;
+    const positions = new Map();
+
+    stages.forEach((stage) => {
+      positions.set(stage, { current: 0 });
+    });
+
+    const tick = () => {
+      const isMobile = window.innerWidth <= 1100;
+
+      stages.forEach((stage) => {
+        const data = positions.get(stage);
+        const panel = stage.closest(".category-panel");
+
+        if (isMobile || (panel && panel.hidden)) {
+          data.current = 0;
+          stage.style.transform = "";
+          return;
+        }
+
+        const parent = stage.closest(".category-shell");
+        if (!parent) return;
+
+        const parentRect = parent.getBoundingClientRect();
+        const stageHeight = stage.offsetHeight;
+        const maxOffset = Math.max(0, parent.offsetHeight - stageHeight);
+
+        let targetY = 0;
+
+        if (parentRect.top < stickyTop) {
+          targetY = Math.min(stickyTop - parentRect.top, maxOffset);
+        }
+
+        data.current += (targetY - data.current) * 0.1;
+
+        if (Math.abs(data.current - targetY) < 0.5) {
+          data.current = targetY;
+        }
+
+        stage.style.transform = `translateY(${data.current}px)`;
+      });
+
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(tick);
+  };
+
   renderArchive();
   updateAllPanels();
   bindInteractions();
   setupRevealObserver();
+  initSmoothSticky();
 
   if (search) {
     search.addEventListener("input", filterArchive);
