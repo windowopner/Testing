@@ -17,7 +17,7 @@
     <div id="action-toast" class="action-toast" aria-live="polite"></div>
 
     <div class="shell">
-      <header class="hero reveal">
+      <header class="hero reveal is-visible">
         <div class="hero-top">
           <p class="eyebrow">LIVE ARCHIVE / 2026</p>
           <div class="social-links" aria-label="Social links">
@@ -79,6 +79,10 @@
       <iframe id="frame" title="Project viewer" loading="lazy"></iframe>
     </div>
 
+    <canvas id="glcanvas" aria-hidden="true"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
+    <script src="ripple.js"></script>
   </body>
 </html>
