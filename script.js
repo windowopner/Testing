@@ -995,13 +995,16 @@ document.addEventListener("DOMContentLoaded", () => {
           targetY = Math.min(stickyTop - contentTop, maxOffset);
         }
 
-        data.current += (targetY - data.current) * 0.1;
+        data.current += (targetY - data.current) * 0.15;
+
+        // 엄격한 범위 제한: 부드러운 스크롤 도중에도 절대 테두리를 벗어나지 않도록 강제 고정
+        data.current = Math.max(0, Math.min(data.current, maxOffset));
 
         if (Math.abs(data.current - targetY) < 0.5) {
           data.current = targetY;
         }
 
-        stage.style.transform = `translateY(${data.current}px)`;
+        stage.style.transform = `translate3d(0, ${data.current}px, 0)`;
       });
 
       requestAnimationFrame(tick);
