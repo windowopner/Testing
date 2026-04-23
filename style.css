@@ -10,7 +10,7 @@
   --primary-neon: #00f0ff;
   --accent: #ff2e88;
   --secondary: #a3ff12;
-  --shadow: 0 38px 120px rgba(0, 0, 0, 0.56);
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -56,6 +56,7 @@ body::after {
   transform: translateX(-100%);
   animation: scan 14s linear infinite;
   opacity: 0.14;
+  will-change: transform;
 }
 
 @keyframes scan {
@@ -148,9 +149,8 @@ body.viewer-open {
   border: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
-    var(--surface);
+    rgba(14, 14, 18, 0.94);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
 }
 
 .hero {
@@ -282,6 +282,7 @@ input:focus {
   position: relative;
   overflow: visible;
   border-radius: 36px;
+  contain: layout style;
 }
 
 .category-panel::before {
@@ -320,8 +321,7 @@ input:focus {
 }
 
 .panel-orb {
-  background: radial-gradient(circle at 88% 18%, rgba(var(--tone-rgb), 0.16), transparent 28%);
-  filter: blur(8px);
+  background: radial-gradient(circle at 88% 18%, rgba(var(--tone-rgb), 0.14), transparent 40%);
 }
 
 .panel-noise {
