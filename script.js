@@ -985,12 +985,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const parentRect = parent.getBoundingClientRect();
         const stageHeight = stage.offsetHeight;
-        const maxOffset = Math.max(0, parent.offsetHeight - stageHeight);
+        const parentPadding = 30;
+        const maxOffset = Math.max(0, parent.offsetHeight - parentPadding * 2 - stageHeight);
 
         let targetY = 0;
+        const contentTop = parentRect.top + parentPadding;
 
-        if (parentRect.top < stickyTop) {
-          targetY = Math.min(stickyTop - parentRect.top, maxOffset);
+        if (contentTop < stickyTop) {
+          targetY = Math.min(stickyTop - contentTop, maxOffset);
         }
 
         data.current += (targetY - data.current) * 0.1;
